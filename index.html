@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dino Runner Game</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+      touch-action: manipulation;
+    }
+    #game-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f7f7f7;
+    }
+    .instructions {
+      margin-top: 15px;
+      color: #555;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="game-container">
+  <canvas id="gameCanvas" width="800" height="300"></canvas>
+</div>
+<div class="instructions">
+  Nhấn <b>Space / Phím Mũi Tên Sên</b> hoặc <b>Chạm màn hình</b> để nhảy | <b>Mũi Tên Xuống</b> để cúi người
+</div>
+
+<script>
+const canvas = document.
